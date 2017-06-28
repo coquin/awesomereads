@@ -1,5 +1,9 @@
 <template>
   <div>
+    <header>
+      <h1>My awesome read list</h1>
+      <router-link :to="{ name: 'AddBook' }">Add a new book</router-link>
+    </header>
     <div v-for="book in books">
       <h2>{{ book.title }}</h2>
       <h3>By {{ book.author }}</h3>
