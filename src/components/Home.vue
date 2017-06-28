@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <h1>My awesome read list</h1>
+      <h1>My awesome read list [{{ booksCount }}]</h1>
       <router-link :to="{ name: 'AddBook' }">Add a new book</router-link>
     </header>
     <div v-for="book in books">
@@ -21,7 +21,11 @@ export default {
   computed: {
     ...mapGetters({
       books: 'allBooks'
-    })
+    }),
+
+    booksCount () {
+      return this.books.length
+    }
   }
 }
 </script>
