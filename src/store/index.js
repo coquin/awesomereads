@@ -6,7 +6,6 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     books: [{
-      id: 1,
       title: 'Moby Dick',
       author: 'Herman Melville',
       cover: 'https://images.gr-assets.com/books/1327940656l/153747.jpg',
@@ -15,5 +14,10 @@ export default new Vuex.Store({
   },
   getters: {
     allBooks: (state) => state.books
+  },
+  mutations: {
+    addBook (state, book) {
+      state.books.unshift(book)
+    }
   }
 })
