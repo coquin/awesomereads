@@ -2,6 +2,14 @@
 
 > A Vue.js project
 
+## Useful links
+
+* [Vue.js documentation](https://vuejs.org/v2/guide)
+* [Vue.js API](https://vuejs.org/v2/api)
+* [Vuex documentation](https://vuex.vuejs.org/en/)
+* [Vue-router documentation](https://router.vuejs.org/en)
+* [Vue-resource](https://github.com/pagekit/vue-resource)
+
 ## Build Setup
 
 ``` bash
